@@ -1,7 +1,12 @@
 @use 'base/reset';
+@use 'base/base';
 @use 'base/typography';
 
 @use 'utils/colors';
 
+@use 'components/buttons';
+
 @use 'layout/commons';
 @use 'layout/nav';
+@use 'layout/header';
+@use 'layout/work';

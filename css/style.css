@@ -81,12 +81,41 @@ select {
   }
 }
 body {
+  font-size: 15px;
+  color: var(--c-neutral);
+}
+
+body {
   font-family: "Montserrat", sans-serif;
 }
 
 :root {
-  --color-primary: #ffe600;
-  --color-neutral: #1e1e1e;
+  --c-primary: #ffe600;
+  --c-neutral: #1e1e1e;
+  --c-placeholder: #edf2f6;
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.2s all;
+  color: var(--c-neutral);
+}
+.btn--big {
+  padding: 1rem 2rem;
+  background-color: var(--c-primary);
+}
+.btn--big:hover {
+  background-color: var(--c-neutral);
+  color: var(--c-primary);
+}
+.btn--small {
+  padding: 0.5rem 1rem;
+  font-size: 0.8em;
+}
+.btn--small:hover, .btn--small--selected {
+  background-color: var(--c-primary);
+  color: var(--c-neutral);
 }
 
 /*
@@ -101,7 +130,6 @@ body {
 
 .nav {
   padding-top: 2rem;
-  font-size: 15px;
 }
 .nav > .wrapper {
   display: flex;
@@ -121,12 +149,80 @@ body {
 }
 .nav__link {
   display: block;
-  color: var(--color-neutral);
+  color: var(--c-neutral);
   text-decoration: none;
   transition: all 0.2s;
 }
 .nav__link:hover {
-  background-color: var(--color-primary);
+  background-color: var(--c-primary);
+}
+
+.header {
+  margin-top: 9.625rem;
+}
+.header > .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.header__col-left {
+  padding-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.header__col-right {
+  height: 33.75rem;
+  background-color: var(--c-placeholder);
+}
+.header__heading {
+  font-size: 3.75em;
+  margin-bottom: 1.6rem;
+}
+.header__text {
+  margin-bottom: 2rem;
+  font-size: 0.8em;
+  line-height: 2.2;
+}
+
+.work {
+  margin-top: 7rem;
+}
+.work__heading {
+  margin-bottom: 2.5rem;
+  font-size: 3.75rem;
+  text-transform: uppercase;
+}
+.work__nav {
+  margin-bottom: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.work__nav-list {
+  display: flex;
+}
+.work__list-item:not(:last-child) {
+  margin-right: 1rem;
+}
+.work__select {
+  background-color: transparent;
+  border: none;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.75rem;
+}
+.gallery__col {
+  min-height: 50rem;
+  display: flex;
+  flex-direction: column;
+}
+.gallery__row {
+  background-color: var(--c-placeholder);
 }
 
 /*# sourceMappingURL=style.css.map */

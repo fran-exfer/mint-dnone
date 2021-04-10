@@ -1,6 +1,5 @@
 .nav {
   padding-top: 2rem;
-  font-size: 15px;
 
   > .wrapper {
     display: flex;
@@ -27,12 +26,12 @@
   &__link {
     display: block;
 
-    color: var(--color-neutral);
+    color: var(--c-neutral);
     text-decoration: none;
     transition: all 0.2s;
 
     &:hover {
-      background-color: var(--color-primary);
+      background-color: var(--c-primary);
     }
   }
 }

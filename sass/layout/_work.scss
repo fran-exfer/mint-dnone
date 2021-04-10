@@ -1,0 +1,50 @@
+.work {
+  margin-top: 7rem;
+
+  &__heading {
+    margin-bottom: 2.5rem;
+    font-size: 3.75rem;
+    text-transform: uppercase;
+  }
+
+  &__nav {
+    margin-bottom: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav-list {
+    display: flex;
+  }
+
+  &__list-item:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  &__select {
+    background-color: transparent;
+    border: none;
+    font-size: 0.8em;
+    text-transform: uppercase;
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.75rem;
+
+  &__col {
+    min-height: 50rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__row {
+    background-color: var(--c-placeholder);
+  }
+
+  &__col--1,
+  &__col--3 {
+  }
+}

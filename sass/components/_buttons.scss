@@ -1,0 +1,27 @@
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.2s all;
+  color: var(--c-neutral);
+
+  &--big {
+    padding: 1rem 2rem;
+    background-color: var(--c-primary);
+
+    &:hover {
+      background-color: var(--c-neutral);
+      color: var(--c-primary);
+    }
+  }
+
+  &--small {
+    padding: 0.5rem 1rem;
+    font-size: 0.8em;
+
+    &:hover,
+    &--selected {
+      background-color: var(--c-primary);
+      color: var(--c-neutral);
+    }
+  }
+}

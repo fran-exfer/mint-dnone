@@ -1,0 +1,32 @@
+.header {
+  margin-top: 9.625rem;
+
+  > .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__col-left {
+    padding-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__col-right {
+    height: 33.75rem;
+    background-color: var(--c-placeholder);
+  }
+
+  &__heading {
+    font-size: 3.75em;
+    margin-bottom: 1.6rem;
+  }
+
+  &__text {
+    margin-bottom: 2rem;
+    font-size: 0.8em;
+    line-height: 2.2;
+  }
+}
