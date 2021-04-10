@@ -1,0 +1,38 @@
+.nav {
+  padding-top: 2rem;
+  font-size: 15px;
+
+  > .wrapper {
+    display: flex;
+  }
+
+  &__logo {
+    height: 3.3125rem;
+  }
+
+  &__list {
+    flex: 1 1 auto;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    text-transform: uppercase;
+  }
+
+  &__list-item:not(:last-child) {
+    margin-right: 5rem;
+  }
+
+  &__link {
+    display: block;
+
+    color: var(--color-neutral);
+    text-decoration: none;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: var(--color-primary);
+    }
+  }
+}

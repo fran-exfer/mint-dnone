@@ -89,4 +89,44 @@ body {
   --color-neutral: #1e1e1e;
 }
 
+/*
+ * This file includes layout utility classes which affect all sections
+ * or are useful to match the layout design.
+ */
+.wrapper {
+  max-width: 75.125rem;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.nav {
+  padding-top: 2rem;
+  font-size: 15px;
+}
+.nav > .wrapper {
+  display: flex;
+}
+.nav__logo {
+  height: 3.3125rem;
+}
+.nav__list {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-transform: uppercase;
+}
+.nav__list-item:not(:last-child) {
+  margin-right: 5rem;
+}
+.nav__link {
+  display: block;
+  color: var(--color-neutral);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.nav__link:hover {
+  background-color: var(--color-primary);
+}
+
 /*# sourceMappingURL=style.css.map */

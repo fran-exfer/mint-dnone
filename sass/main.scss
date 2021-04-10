@@ -1,4 +1,7 @@
 @use 'base/reset';
 @use 'base/typography';
 
-@use 'utils/_colors';
+@use 'utils/colors';
+
+@use 'layout/commons';
+@use 'layout/nav';
