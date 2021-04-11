@@ -1,0 +1,21 @@
+.partners {
+  margin-top: 4rem;
+  padding: 7.8rem 0;
+  background-color: var(--c-bg-alt);
+
+  > .wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 5rem;
+  }
+
+  &__partner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > img {
+      max-height: 6rem;
+    }
+  }
+}

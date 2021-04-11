@@ -1,3 +1,16 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+.text-heading {
+  margin-bottom: 2.5rem;
+  font-size: 3.75rem;
+  text-transform: uppercase;
+}
+
+.text-section-desc {
+  margin-bottom: 2rem;
+  font-size: 0.8em;
+  line-height: 2.2;
+  max-width: calc(var(--wrapper-width) / 2 - var(--wrapper-h-pad) * 2);
+}

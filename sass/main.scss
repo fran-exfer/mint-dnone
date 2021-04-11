@@ -3,6 +3,7 @@
 @use 'base/typography';
 
 @use 'utils/colors';
+@use 'utils/variables';
 
 @use 'components/buttons';
 
@@ -10,3 +11,8 @@
 @use 'layout/nav';
 @use 'layout/header';
 @use 'layout/work';
+@use 'layout/partners';
+@use 'layout/about';
+@use 'layout/blog';
+@use 'layout/contact';
+@use 'layout/footer';

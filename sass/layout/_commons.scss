@@ -4,7 +4,7 @@
  */
 
 .wrapper {
-  max-width: 75.125rem;
+  max-width: var(--wrapper-width);
   margin: auto;
-  padding: 0 2rem;
+  padding: 0 var(--wrapper-h-pad);
 }

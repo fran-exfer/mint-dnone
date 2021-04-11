@@ -1,0 +1,76 @@
+.contact {
+  margin-top: 5rem;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+
+    font-size: 0.8em;
+  }
+
+  &__form-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    > *:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    > h2 {
+      font-size: 2.5em;
+    }
+
+    > input[type='text'],
+    input[type='email'],
+    textarea {
+      width: 100%;
+      padding: 1rem;
+      background-color: var(--c-bg-alt);
+      border: none;
+      resize: none;
+    }
+  }
+
+  &__figure-col {
+    height: 29rem;
+    background-color: var(--c-placeholder);
+  }
+}
+
+.contact-icons {
+  width: 39.75rem;
+  margin: 4.3rem auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  font-size: 0.8em;
+  text-align: center;
+
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > img {
+      height: 2rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.social-icons {
+  width: 17rem;
+  margin: 4.5rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+
+  &__icon {
+    max-width: 2rem;
+    max-height: 2rem;
+  }
+}

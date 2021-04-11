@@ -19,14 +19,8 @@
     background-color: var(--c-placeholder);
   }
 
-  &__heading {
+  .header__heading {
     font-size: 3.75em;
     margin-bottom: 1.6rem;
-  }
-
-  &__text {
-    margin-bottom: 2rem;
-    font-size: 0.8em;
-    line-height: 2.2;
   }
 }
