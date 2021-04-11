@@ -1,0 +1,21 @@
+/*
+ * Breakpoints mixin
+ * Based on Bootstrap's breakpoints
+ */
+
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+@mixin bp($b) {
+  @if map-has-key($breakpoints, $b) {
+    @media (max-width: map-get($breakpoints, $b)) {
+      @content;
+    }
+  }
+}

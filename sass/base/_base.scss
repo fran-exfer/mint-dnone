@@ -6,3 +6,14 @@ body {
   font-size: 15px;
   color: var(--c-neutral);
 }
+
+.wrapper {
+  max-width: var(--wrapper-width);
+  margin: auto;
+  padding: 0 var(--wrapper-h-pad);
+}
+
+.placeholder-img {
+  max-width: 100%;
+  background-color: var(--c-placeholder);
+}

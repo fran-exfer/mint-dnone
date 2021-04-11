@@ -89,6 +89,21 @@ body {
   color: var(--c-neutral);
 }
 
+.wrapper {
+  max-width: var(--wrapper-width);
+  margin: auto;
+  padding: 0 var(--wrapper-h-pad);
+}
+
+.placeholder-img {
+  max-width: 100%;
+  background-color: var(--c-placeholder);
+}
+
+/*
+ * Breakpoints mixin
+ * Based on Bootstrap's breakpoints
+ */
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -97,6 +112,11 @@ body {
   margin-bottom: 2.5rem;
   font-size: 3.75rem;
   text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .text-heading {
+    font-size: 3rem;
+  }
 }
 
 .text-section-desc {
@@ -148,16 +168,6 @@ body {
   color: var(--c-neutral);
 }
 
-/*
- * This file includes layout utility classes which affect all sections
- * or are useful to match the layout design.
- */
-.wrapper {
-  max-width: var(--wrapper-width);
-  margin: auto;
-  padding: 0 var(--wrapper-h-pad);
-}
-
 .nav {
   padding-top: 2rem;
 }
@@ -177,6 +187,16 @@ body {
 .nav__list-item:not(:last-child) {
   margin-right: 5rem;
 }
+@media (max-width: 768px) {
+  .nav__list-item:not(:last-child) {
+    margin-right: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  .nav__list-item:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
 .nav__link {
   display: block;
   color: var(--c-neutral);
@@ -193,9 +213,15 @@ body {
 .header > .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+@media (max-width: 768px) {
+  .header > .wrapper {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
 .header__col-left {
-  padding-right: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -203,11 +229,26 @@ body {
 }
 .header__col-right {
   height: 33.75rem;
-  background-color: var(--c-placeholder);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .header__col-right {
+    display: none;
+  }
+}
+.header__col-right > .placeholder-img {
+  padding-bottom: 100%;
 }
 .header .header__heading {
   font-size: 3.75em;
   margin-bottom: 1.6rem;
+}
+@media (max-width: 992px) {
+  .header .header__heading {
+    font-size: 3em;
+  }
 }
 
 .work {
