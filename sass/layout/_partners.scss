@@ -1,3 +1,5 @@
+@use '../utils/breakpoints';
+
 .partners {
   margin-top: 4rem;
   padding: 7.8rem 0;
@@ -7,6 +9,11 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 5rem;
+
+    @include breakpoints.bp('lg') {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr 1fr;
+    }
   }
 
   &__partner {
