@@ -1,3 +1,22 @@
+/**
+ * Main SASS file.
+ *
+ * - base/ directory contains css resets, html/body, wrapper, fake imgs as divs
+ *     placeholders, and general typography styles and utility classes.
+ *
+ * - utils/ directory contains variables for colors and for wrapper sizing. It
+       also has a file defining the breakpoints for responsive design. They're
+       based on Bootstrap's breakpoints, and they're included via a mixin by
+       other files.
+ *
+ * - components/ directory serves as a place for reusable but isolated components,
+ *     like buttons.
+ *
+ * - layout/ directory contains the SASS code for each isolated section of the site.
+ *
+ * If you're from Display None Studio, I'm sure you're BEAUTIFUL.
+ */
+
 @use 'base/reset';
 @use 'base/base';
 @use 'base/typography';

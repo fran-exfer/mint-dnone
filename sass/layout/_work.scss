@@ -1,5 +1,9 @@
 @use '../utils/breakpoints';
 
+/*
+ * Portfolio section. This first class group governs the "tabs" and the select
+ * above the masonry gallery.
+ */
 .work {
   margin-top: 7rem;
 
@@ -34,6 +38,11 @@
   }
 }
 
+/*
+ * The gallery with a masonry layout. This was the hardest part, not having
+ * real images to keep the aspect ratio of the whole grid was tricky and it is
+ * a bit sketchy!
+ */
 .gallery {
   --col-h: 50rem;
   --gap: 1.75rem;
@@ -66,18 +75,28 @@
     }
   }
 
+  /*
+   * Short grid cells.
+   */
   &__col--1 > &__row--1,
   &__col--2 > &__row--2,
   &__col--3 > &__row--1 {
     flex: 0 0 calc(var(--col-h) * 0.4 - var(--gap));
   }
 
+  /*
+   * Long grid cells.
+   */
   &__col--1 > &__row--2,
   &__col--2 > &__row--1,
   &__col--3 > &__row--2 {
     flex: 0 0 60%;
   }
 
+  /*
+   * First cell in particular, which has a heading and a text with a background
+   * color.
+   */
   &__col--1 > &__row--1 {
     background-color: var(--c-primary);
     display: flex;

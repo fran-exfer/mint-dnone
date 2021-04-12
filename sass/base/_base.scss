@@ -13,6 +13,11 @@ body {
   padding: 0 var(--wrapper-h-pad);
 }
 
+/*
+ * As the design has a lot of places where there should be an image, this is my
+ * attempt at faking the behaviour of a real img element, with some
+ * aspect-ratio magic spread around the places where I use it.
+ */
 .placeholder-img {
   max-width: 100%;
   background-color: var(--c-placeholder);

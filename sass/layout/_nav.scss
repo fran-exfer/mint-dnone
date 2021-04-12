@@ -1,5 +1,8 @@
 @use '../utils/breakpoints';
 
+/*
+ * Site nav-bar
+ */
 .nav {
   padding-top: 2rem;
 
@@ -11,6 +14,9 @@
     height: 3.3125rem;
   }
 
+  /*
+   * Navigation links
+   */
   &__list {
     flex: 1 1 auto;
 

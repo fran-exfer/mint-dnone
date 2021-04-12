@@ -1,5 +1,8 @@
 @use '../utils/breakpoints';
 
+/*
+ * Contact form section.
+ */
 .contact {
   margin-top: 5rem;
 
@@ -40,6 +43,11 @@
     }
   }
 
+  /*
+   * Image on the right. I've decided on not displaying this image when the
+   * device's screen size becomes too narrow, assuming it's not important and
+   * a mobile design was not specified. We could've have done it differently.
+   */
   &__figure-col {
     height: 29rem;
     display: flex;
@@ -57,6 +65,9 @@
   }
 }
 
+/*
+ * Address/phone/email icon grid.
+ */
 .contact-icons {
   max-width: 39.75rem;
   margin: 4.3rem auto 0 auto;
@@ -78,6 +89,9 @@
   }
 }
 
+/*
+ * Social networks icon grid.
+ */
 .social-icons {
   width: 17rem;
   margin: 4.5rem auto;

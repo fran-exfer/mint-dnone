@@ -1,5 +1,8 @@
 @use '../utils/breakpoints';
 
+/*
+ * Blog articles section.
+ */
 .blog {
   margin-top: 7.5rem;
   padding: 7.5rem 0;
@@ -12,6 +15,8 @@
     grid-gap: 2rem;
     margin-top: 4rem;
 
+    /* When we reduce screen size, the whole grid becomes a flexible layout
+       with wrapping. */
     @include breakpoints.bp('lg') {
       display: flex;
       flex-wrap: wrap;
@@ -31,6 +36,9 @@
     align-items: center;
   }
 
+  /*
+   * First blog card has a background and some text.
+   */
   &__post-figure--readmore {
     background-color: var(--c-primary);
     font-size: 2em;

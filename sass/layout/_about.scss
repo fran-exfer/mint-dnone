@@ -1,5 +1,8 @@
 @use '../utils/breakpoints';
 
+/*
+ * About us section.
+ */
 .about {
   margin-top: 8rem;
 
@@ -8,6 +11,8 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
 
+    /* When we reduce screen size, the whole grid becomes a flexible layout
+       with wrapping. */
     @include breakpoints.bp('lg') {
       display: flex;
       flex-wrap: wrap;
@@ -22,6 +27,9 @@
     flex-direction: column;
     height: 26.25rem;
 
+    /*
+     * First two columns are members of the team.
+     */
     &--1,
     &--2 {
       justify-content: flex-end;
@@ -29,6 +37,9 @@
       background-color: var(--c-placeholder);
     }
 
+    /*
+     * The third column has info about the team.
+     */
     &--3 {
       padding: 2.5rem;
       justify-content: center;
@@ -57,6 +68,9 @@
     }
   }
 
+  /*
+   * Bottom-left box below each of the team members.
+   */
   &__person-tag {
     width: 70%;
     padding: 0.5rem 2rem;

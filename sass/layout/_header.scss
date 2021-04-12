@@ -1,5 +1,8 @@
 @use '../utils/breakpoints';
 
+/*
+ * First section, with the call-to-action button.
+ */
 .header {
   margin-top: 9.625rem;
 
@@ -14,6 +17,9 @@
     }
   }
 
+  /*
+   * Presentation and CTA.
+   */
   &__col-left {
     display: flex;
     flex-direction: column;
@@ -21,6 +27,20 @@
     align-items: flex-start;
   }
 
+  .header__heading {
+    font-size: 3.75em;
+    margin-bottom: 1.6rem;
+
+    @include breakpoints.bp('lg') {
+      font-size: 3em;
+    }
+  }
+
+  /*
+   * Image on the right. I've decided on not displaying this image when the
+   * device's screen size becomes too narrow, assuming it's not important and
+   * a mobile design was not specified. We could've have done it differently.
+   */
   &__col-right {
     height: 33.75rem;
     display: flex;
@@ -34,15 +54,6 @@
     > .placeholder-img {
       // Aspect ratio 1:1
       padding-bottom: 100%;
-    }
-  }
-
-  .header__heading {
-    font-size: 3.75em;
-    margin-bottom: 1.6rem;
-
-    @include breakpoints.bp('lg') {
-      font-size: 3em;
     }
   }
 }
