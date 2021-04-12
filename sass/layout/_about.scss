@@ -1,3 +1,5 @@
+@use '../utils/breakpoints';
+
 .about {
   margin-top: 8rem;
 
@@ -5,9 +7,17 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
+
+    @include breakpoints.bp('lg') {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__grid-col {
+    flex: 0 1 23rem;
+
     display: flex;
     flex-direction: column;
     height: 26.25rem;
