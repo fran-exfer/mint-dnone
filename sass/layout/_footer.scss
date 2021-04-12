@@ -1,8 +1,14 @@
+@use '../utils/breakpoints';
+
 .footer {
   height: 11.25rem;
   background-color: var(--c-neutral);
   color: #fff;
   font-size: 0.8em;
+
+  @include breakpoints.bp('sm') {
+    font-size: 0.7em;
+  }
 
   > .wrapper {
     height: 100%;
