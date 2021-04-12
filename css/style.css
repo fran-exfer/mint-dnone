@@ -495,6 +495,11 @@ body {
   grid-gap: 1rem;
   font-size: 0.8em;
 }
+@media (max-width: 576px) {
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+}
 .contact__form-col {
   display: flex;
   flex-direction: column;
@@ -518,11 +523,21 @@ body {
 }
 .contact__figure-col {
   height: 29rem;
-  background-color: var(--c-placeholder);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 576px) {
+  .contact__figure-col {
+    display: none;
+  }
+}
+.contact__figure-col > .placeholder-img {
+  padding-bottom: 80%;
 }
 
 .contact-icons {
-  width: 39.75rem;
+  max-width: 39.75rem;
   margin: 4.3rem auto 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

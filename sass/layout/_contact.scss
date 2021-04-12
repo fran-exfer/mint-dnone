@@ -1,3 +1,5 @@
+@use '../utils/breakpoints';
+
 .contact {
   margin-top: 5rem;
 
@@ -7,6 +9,10 @@
     grid-gap: 1rem;
 
     font-size: 0.8em;
+
+    @include breakpoints.bp('sm') {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__form-col {
@@ -36,12 +42,23 @@
 
   &__figure-col {
     height: 29rem;
-    background-color: var(--c-placeholder);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include breakpoints.bp('sm') {
+      display: none;
+    }
+
+    > .placeholder-img {
+      // Keep aspect ratio
+      padding-bottom: 80%;
+    }
   }
 }
 
 .contact-icons {
-  width: 39.75rem;
+  max-width: 39.75rem;
   margin: 4.3rem auto 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
