@@ -1,3 +1,5 @@
+@use '../utils/breakpoints';
+
 .btn {
   border: none;
   color: var(--c-neutral);
@@ -23,6 +25,10 @@
   &--small {
     padding: 0.5rem 1rem;
     font-size: 0.8em;
+
+    @include breakpoints.bp('sm') {
+      padding: 0.5rem 0.5rem;
+    }
 
     &:hover,
     &--selected {
